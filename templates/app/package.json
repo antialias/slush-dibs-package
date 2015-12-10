@@ -1,0 +1,23 @@
+{
+  "name": "<%= name %>",
+  "version": "1.0.0",
+  "description": "<%= description %>",
+  "author": "1stdibs.com, Inc.",
+  "scripts": {
+    "test": "mocha",
+    "gitlint": "node_modules/.bin/dibslint --git --warnings",
+    "lint": "dibslint --root=."
+  },
+  "main": "index.js",
+  "devDependencies": {
+    "dibslint": "^1.2.4",
+    "mocha": "^2.3.4",
+    "nodemon": "^1.8.1",
+    "pre-commit": "^1.1.2"
+  },
+  "pre-commit": {
+    "run": [
+      "gitlint"
+    ]
+  }
+}

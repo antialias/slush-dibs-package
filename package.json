@@ -1,0 +1,24 @@
+{
+  "name": "slush-dibs-package",
+  "version": "1.0.0",
+  "description": "slush scaffold generator for 1stdibs npm pacakges",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "camelcase": "^2.0.1",
+    "gulp": "^3.9.0",
+    "gulp-conflict": "^0.4.0",
+    "gulp-install": "^0.6.0",
+    "gulp-template": "^3.1.0",
+    "inquirer": "^0.11.0"
+  },
+  "devDependencies": {
+    "dibslint": "^1.2.4",
+    "mocha": "^2.3.4",
+    "pre-commit": "^1.1.2"
+  }
+}
