@@ -9,15 +9,15 @@
     "lint": "dibslint --root=."
   },
   "main": "index.js",
+  "pre-commit": {
+    "run": [
+      "gitlint"
+    ]
+  },
   "devDependencies": {
     "dibslint": "^1.2.4",
     "mocha": "^2.3.4",
     "nodemon": "^1.8.1",
     "pre-commit": "^1.1.2"
-  },
-  "pre-commit": {
-    "run": [
-      "gitlint"
-    ]
   }
 }
