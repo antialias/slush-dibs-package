@@ -43,6 +43,7 @@ npm test
 ```bash
 % tree -a templates/app
 templates/app
+├── .gitignore
 ├── .npmrc
 ├── index.js
 ├── package.json
