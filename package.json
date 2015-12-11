@@ -1,6 +1,6 @@
 {
   "name": "slush-dibs-package",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "slush scaffold generator for 1stdibs npm pacakges",
   "author": "",
   "scripts": {
