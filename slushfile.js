@@ -4,19 +4,28 @@ const install = require('gulp-install');
 const template = require('gulp-template');
 const inquirer = require('inquirer');
 const camelCase = require('camelcase');
+const existsSync = require('path-exists').sync;
+const path = require('path');
+const fs = require('fs');
+const conflictMerge = require('./lib/conflict-merge');
 gulp.task('default', function (done) {
+    let packagejson = {};
+    if (existsSync('package.json')) {
+        packagejson = JSON.parse(fs.readFileSync('package.json'));
+    }
     inquirer.prompt(
         [
             {
                 type: 'input',
                 name: 'name',
                 message: 'Give your package a name:',
-                default: require('path').parse(process.cwd()).name
+                default: packagejson.name || path.parse(process.cwd()).name
             },
             {
                 type: 'input',
                 name: 'description',
-                message: 'What does your package do?'
+                message: 'What does your package do?',
+                default: packagejson.description
             },
         ],
         function (answers) {
