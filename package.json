@@ -2,7 +2,7 @@
   "name": "slush-dibs-package",
   "version": "1.1.2",
   "description": "slush scaffold generator for 1stdibs npm pacakges",
-  "author": "",
+  "author": "Thomas Hallock",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "gitlint": "node_modules/.bin/dibslint --git --warnings",
@@ -32,5 +32,17 @@
     "inquirer": "^0.11.0",
     "path-exists": "^2.1.0",
     "through2": "^2.0.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1stdibs/slush-dibs-package.git"
+  },
+  "keywords": [
+    "slush",
+    "scaffold"
+  ],
+  "bugs": {
+    "url": "https://github.com/1stdibs/slush-dibs-package/issues"
+  },
+  "homepage": "https://github.com/1stdibs/slush-dibs-package#readme"
 }
